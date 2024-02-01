@@ -1,7 +1,7 @@
-// let meter = +prompt('Середня відстань пройдена за день в метрах:');
-// let count = +prompt('Кількість днів які треба обрахувати:');
-// let summMeter = meter * count;
-// alert('Відстань пройдена за ' + count + ' днів = ' + summMeter + ' м.');
+let meter = +prompt('Середня відстань пройдена за день в метрах:');
+let count = +prompt('Кількість днів які треба обрахувати:');
+let summMeter = meter * count;
+alert('Відстань пройдена за ' + count + ' днів = ' + summMeter + ' м.');
 
 const credentials = {
     login: 'admin',
@@ -15,8 +15,6 @@ const submit = document.getElementById('submit');
 
 function login(e) {
     e.preventDefault();
-    console.log('login = ', user.value);
-    console.log('password = ', password.value);
 
     if (user.value === credentials.login && password.value === credentials.password) {
         const messege = document.createElement('div');
