@@ -1,0 +1,28 @@
+let str = "qwe ahdjaad,, ,,a,,as, a,s, a,sdad, sa,d,asdlty";
+let pad = "123";
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.length);
+console.log(str.slice(0, 2));
+console.log(str.slice(-3));
+console.log(str.slice(1));
+console.log(str.slice(3, -1));
+console.log(str.slice(2, 4));
+console.log(str.indexOf("e"));
+console.log(str.indexOf("s"));
+console.log(str.includes("s"));
+console.log(str.includes("we"));
+console.log(str.startsWith("qw"));
+console.log(str.endsWith("ty"));
+console.log(str.split(","));
+console.log(str.repeat(3));
+console.log(str.trim());
+console.log(str.trimStart());
+console.log(str.trimEnd());
+console.log(pad.padStart(8, "_"));
+console.log(pad.padEnd(8, "0"));
+console.log(str.split(",").join(", блін "));
+
+let str1 = prompt("Ведіть текст з посіланням на відео в YOUTUBE");
+const dateRegexp = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+let idVideo = str1.match(dateRegexp)[2];
